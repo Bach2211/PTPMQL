@@ -1,0 +1,38 @@
+<h1>HTML Images - Trần Xuân Bách - 2121050372</h1>
+
+<!-- Basic Image -->
+<img src="c:\Users\ASUS\Downloads\475923159_1136444884553573_3545658667319278855_n.jpg" alt="Chania" width="300">
+
+<!-- Set Width & Height -->
+<img src="c:\Users\ASUS\Downloads\474967392_1130829915115070_8353435862203620987_n.jpg" alt="Girl" width="200" height="250">
+
+<!-- Image Floating -->
+<p>
+  <img src="c:\Users\ASUS\Downloads\471633946_1112100210321374_472496335123050271_n.jpg" alt="Trulli" style="float:right; width:200px;">
+  The image is floating to the right.
+</p>
+
+<!-- Link an Image -->
+<a href="https://www.w3schools.com">
+  <img src="c:\Users\ASUS\Downloads\473588302_1121659006032161_1584149168608078091_n.jpg" alt="Link Image" width="200">
+</a>
+
+<!-- Use as Background (inline) -->
+<p style="background-image: url('c:\Users\ASUS\Downloads\476637711_1140405547490840_6510729462567742399_n.jpg'); padding:20px;">
+  Background Image Example
+</p>
+
+<!-- Image map -->
+<img src="c:\Users\ASUS\Downloads\475765173_1133636881501040_1751697418292143610_n.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/html/">
+  <area shape="circle" coords="337,300,44" href="https://www.w3schools.com/css/">
+</map>
+
+<!-- Picture Element -->
+<picture>
+  <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width:600px)">
+  <source srcset="https://www.w3schools.com/html/img_girl.jpg" media="(max-width:1000px)">
+  <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Picture Element" style="width:auto;">
+</picture>

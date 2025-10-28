@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 5 – Tables Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header SV -->
+<div class="container-fluid p-5 bg-dark text-white text-center">
+  <h1 class="mb-1">Trần Xuân Bách</h1>
+  <div>MSSV: 2121050372</div>
+</div>
+
+<div class="container py-4">
+
+  <!-- 1) Basic -->
+  <h3 class="mb-3">Basic Table</h3>
+  <table class="table">
+    <caption>Danh sách sinh viên</caption>
+    <thead class="table-light">
+      <tr>
+        <th>#</th><th>Họ tên</th><th>Lớp</th><th>Điểm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Nguyễn A</td><td>KTPM</td><td>8.5</td></tr>
+      <tr><td>2</td><td>Trần B</td><td>QTKD</td><td>7.9</td></tr>
+      <tr><td>3</td><td>Lê C</td><td>Marketing</td><td>9.1</td></tr>
+    </tbody>
+    <tfoot class="table-light">
+      <tr><td colspan="3">Số lượng</td><td>3</td></tr>
+    </tfoot>
+  </table>
+
+  <hr class="my-5">
+
+  <!-- 2) Striped rows / hover / small -->
+  <h3 class="mb-3">Striped / Hover / Small</h3>
+  <table class="table table-striped table-hover table-sm align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>#</th><th>Môn</th><th>Tín chỉ</th><th>Giảng viên</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Cơ sở dữ liệu</td><td>3</td><td>ThS. Hùng</td></tr>
+      <tr><td>2</td><td>Lập trình Web</td><td>3</td><td>ThS. Hà</td></tr>
+      <tr><td>3</td><td>Hệ điều hành</td><td>4</td><td>TS. Minh</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="my-5">
+
+  <!-- 3) Bordered / Borderless / Striped columns -->
+  <h3 class="mb-3">Bordered / Borderless / Striped Columns</h3>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr><th>Tuần</th><th>Chủ đề</th><th>Ghi chú</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Giới thiệu</td><td class="text-nowrap">Slide + BTL</td></tr>
+          <tr><td>2</td><td>HTML/CSS</td><td>Lab</td></tr>
+          <tr><td>3</td><td>Bootstrap</td><td>Quiz</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-borderless table-striped-columns">
+        <thead class="table-light">
+          <tr><th>Phòng</th><th>Máy</th><th>Tình trạng</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A101</td><td>35</td><td>OK</td></tr>
+          <tr><td>A102</td><td>32</td><td>Bảo trì</td></tr>
+          <tr><td>A103</td><td>40</td><td>OK</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- 4) Contextual colors -->
+  <h3 class="mb-3">Contextual Colors</h3>
+  <table class="table">
+    <thead class="table-light">
+      <tr><th>STT</th><th>Môn</th><th>Trạng thái</th></tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr class="table-success"><td>1</td><td>Toán rời rạc</td><td>Đạt</td></tr>
+      <tr class="table-warning"><td>2</td><td>XSTK</td><td>Thi lại</td></tr>
+      <tr class="table-danger"><td>3</td><td>VXL</td><td>Cảnh báo</td></tr>
+      <tr class="table-info"><td>4</td><td>Tiếng Anh</td><td>Bổ sung</td></tr>
+      <tr class="table-active"><td>5</td><td>Triết</td><td>Đã đăng ký</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="my-5">
+
+  <!-- 5) Dark table -->
+  <h3 class="mb-3">Dark Table</h3>
+  <table class="table table-dark table-striped table-hover align-middle">
+    <thead>
+      <tr><th>#</th><th>Task</th><th>Deadline</th><th>Owner</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Thiết kế UI</td><td>10/11</td><td>An</td></tr>
+      <tr><td>2</td><td>API Backend</td><td>17/11</td><td>Bình</td></tr>
+      <tr><td>3</td><td>Triển khai</td><td>24/11</td><td>Cường</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="my-5">
+
+  <!-- 6) Responsive wrapper -->
+  <h3 class="mb-3">Responsive Tables</h3>
+
+  <div class="table-responsive mb-4">
+    <table class="table table-bordered align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Col 1</th><th>Col 2</th><th>Col 3</th><th>Col 4</th>
+          <th>Col 5</th><th>Col 6</th><th>Col 7</th><th>Col 8</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>R1C1</td><td>R1C2</td><td>R1C3</td><td>R1C4</td>
+          <td>R1C5</td><td>R1C6</td><td>R1C7</td><td>R1C8</td>
+        </tr>
+        <tr>
+          <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td>
+          <td>R2C5</td><td>R2C6</td><td>R2C7</td><td>R2C8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-responsive-sm mb-4">
+    <table class="table table-striped">
+      <thead class="table-light"><tr><th>.table-responsive-sm</th><th>A</th><th>B</th><th>C</th></tr></thead>
+      <tbody><tr><td>Row 1</td><td>1</td><td>2</td><td>3</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="table-responsive-md">
+    <table class="table table-striped">
+      <thead class="table-light"><tr><th>.table-responsive-md</th><th>A</th><th>B</th><th>C</th></tr></thead>
+      <tbody><tr><td>Row 1</td><td>4</td><td>5</td><td>6</td></tr></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

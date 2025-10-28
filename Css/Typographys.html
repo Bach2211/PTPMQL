@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 5 – Typography Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header thông tin sinh viên -->
+<div class="container-fluid p-5 bg-dark text-white text-center">
+  <h1 class="mb-1">Trần Xuân Bách</h1>
+  <div>MSSV: 2121050372</div>
+</div>
+
+<div class="container py-4">
+
+  <!-- Headings -->
+  <h3 class="mb-3">Headings</h3>
+  <h1>h1. Heading <small class="text-muted">sub</small></h1>
+  <h2>h2. Heading <small class="text-muted">sub</small></h2>
+  <h3>h3. Heading <small class="text-muted">sub</small></h3>
+  <h4>h4. Heading <small class="text-muted">sub</small></h4>
+  <h5>h5. Heading <small class="text-muted">sub</small></h5>
+  <h6>h6. Heading <small class="text-muted">sub</small></h6>
+  <hr class="my-4">
+
+  <!-- Display headings -->
+  <h3 class="mb-3">Display Headings</h3>
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1 class="display-5">Display 5</h1>
+  <h1 class="display-6">Display 6</h1>
+  <hr class="my-4">
+
+  <!-- Lead -->
+  <h3 class="mb-3">Lead</h3>
+  <p class="lead">Đoạn lead ngắn gọn để làm nổi bật nội dung chính.</p>
+  <hr class="my-4">
+
+  <!-- Inline text elements -->
+  <h3 class="mb-3">Inline Text Elements</h3>
+  <p><mark>mark</mark>, <del>del</del>, <s>s</s>, <ins>ins</ins>, <u>u</u>, <small>small</small>, <strong>strong</strong>, <em>em</em></p>
+  <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> &amp; <abbr title="Cascading Style Sheets">CSS</abbr></p>
+  <hr class="my-4">
+
+  <!-- Blockquotes -->
+  <h3 class="mb-3">Blockquotes</h3>
+  <blockquote class="blockquote">
+    <p>Ví dụ trích dẫn ngắn.</p>
+  </blockquote>
+  <figure>
+    <blockquote class="blockquote">
+      <p>Trích dẫn có chú thích.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">Nguồn <cite title="Source Title">Source Title</cite></figcaption>
+  </figure>
+  <hr class="my-4">
+
+  <!-- Description List -->
+  <h3 class="mb-3">Description List</h3>
+  <dl class="row">
+    <dt class="col-sm-3">Thuật ngữ</dt>
+    <dd class="col-sm-9">Định nghĩa ngắn.</dd>
+    <dt class="col-sm-3">Thuật ngữ dài hơn</dt>
+    <dd class="col-sm-9">Mô tả chi tiết hơn cho mục này.</dd>
+  </dl>
+  <hr class="my-4">
+
+  <!-- Lists -->
+  <h3 class="mb-3">Lists</h3>
+  <ul class="list-unstyled">
+    <li>Mục 1</li>
+    <li>Mục 2
+      <ul>
+        <li>Con 2.1</li>
+        <li>Con 2.2</li>
+      </ul>
+    </li>
+    <li>Mục 3</li>
+  </ul>
+  <ul class="list-inline">
+    <li class="list-inline-item">One</li>
+    <li class="list-inline-item">Two</li>
+    <li class="list-inline-item">Three</li>
+  </ul>
+  <hr class="my-4">
+
+  <!-- Text alignment -->
+  <h3 class="mb-3">Text Alignment</h3>
+  <p class="text-start">Start</p>
+  <p class="text-center">Center</p>
+  <p class="text-end">End</p>
+  <p class="text-sm-start text-md-center text-lg-end">Responsive alignment</p>
+  <hr class="my-4">
+
+  <!-- Text transform -->
+  <h3 class="mb-3">Text Transform</h3>
+  <p class="text-lowercase">LOWERCASE</p>
+  <p class="text-uppercase">uppercase</p>
+  <p class="text-capitalize">capitalize each word</p>
+  <hr class="my-4">
+
+  <!-- Font weight & style -->
+  <h3 class="mb-3">Font Weight & Style</h3>
+  <p class="fw-bold">fw-bold</p>
+  <p class="fw-normal">fw-normal</p>
+  <p class="fw-light">fw-light</p>
+  <p class="fst-italic">fst-italic</p>
+  <p class="fst-normal">fst-normal</p>
+  <hr class="my-4">
+
+  <!-- Font size utilities -->
+  <h3 class="mb-3">Font Size (fs-1 … fs-6)</h3>
+  <div class="fs-1">fs-1</div>
+  <div class="fs-2">fs-2</div>
+  <div class="fs-3">fs-3</div>
+  <div class="fs-4">fs-4</div>
+  <div class="fs-5">fs-5</div>
+  <div class="fs-6">fs-6</div>
+  <hr class="my-4">
+
+  <!-- Line height -->
+  <h3 class="mb-3">Line Height</h3>
+  <p class="lh-1 border p-2">lh-1: dòng rất sát nhau. Dòng 2.</p>
+  <p class="lh-sm border p-2">lh-sm: nhỏ. Dòng 2.</p>
+  <p class="lh-base border p-2">lh-base: mặc định. Dòng 2.</p>
+  <p class="lh-lg border p-2">lh-lg: lớn. Dòng 2.</p>
+  <hr class="my-4">
+
+  <!-- Monospace, Code, Kbd, Pre -->
+  <h3 class="mb-3">Code / Kbd / Pre</h3>
+  <p class="font-monospace">font-monospace ví dụ</p>
+  <p>Dùng <code>&lt;code&gt;</code> trong dòng, phím tắt <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+  <pre class="p-3 bg-light border"><code>pre code block
+line 2
+line 3</code></pre>
+  <hr class="my-4">
+
+  <!-- Wrapping / Breaking -->
+  <h3 class="mb-3">Wrapping & Breaking</h3>
+  <p class="text-wrap border p-2">Nội dung có thể xuống dòng khi chật.</p>
+  <p class="text-nowrap border p-2">Nội dung không xuống dòng khi chật, sẽ tràn ngang nếu thiếu chỗ.</p>
+  <p class="text-break border p-2">Siêu_dài_không_có_khoảng_trắng_sẽ_bị_bẻ_dòng_tự_động_nếu_cần_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
